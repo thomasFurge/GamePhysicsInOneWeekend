@@ -9,5 +9,9 @@ ResolveContact
 ====================================================
 */
 void ResolveContact( contact_t & contact ) {
-	// TODO: Add Code
+	Body* bodyA = contact.bodyA;
+	Body* bodyB = contact.bodyB;
+
+	bodyA->m_linearVelocity.Zero();
+	bodyB->m_linearVelocity.Zero();
 }
